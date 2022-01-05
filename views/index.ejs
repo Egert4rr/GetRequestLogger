@@ -10,9 +10,16 @@
             <%= CurrentTime %>
         </h1>
         <hr>
-        
-        
     </div>
+    <ul>
+        <% for(let i = 0; i < myLogs.length; i ++) {%>
+            <li>
+            <div>
+                <%= myLogs[i].time %>
+            </div>
+            </li>
+        <% } %>
+    </ul>
     
     <footer>Egert Arr 2021 &#169;</footer>
     
